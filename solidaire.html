@@ -42,223 +42,78 @@
         </header>
 
         <section class="mt-4">
-        <div class="row justify-content-between">
-          <div class="vaccin">
-            <h2>Vaccins et vaccination : qu'est-ce que la vaccination ?</h2>
-            <p>"Annonce récente du ministre qui souhaite que chaque français et française puisse déclarer son souhait de se faire vacciner."</p>
-          </div>
-        
           
+          <p>Si vous n'êtes toujours pas vacciné et que vous souhaitez trouver un centre de vaccination près de chez vous, remplissez le formulaire.</p>
+          <p>Ensemble, sauvons des vies.</p>
 
-
-
-
-          <div class="row">
-            <div class="art col-md-8 pd">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Qu'est-ce que la vaccination ?
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>La vaccination est un moyen simple, sûr et efficace de vous protéger des maladies dangereuses, avant d’être en contact avec ces affections. Elle utilise les défenses naturelles de l’organisme pour créer une résistance à des infections spécifiques et renforcer le système immunitaire.</p>
-                            <p>Les vaccins stimulent le système immunitaire pour créer des anticorps, de la même manière que s’il était exposé à la maladie. Mais comme les vaccins ne renferment que des formes tuées ou atténuées des germes, virus ou bactéries, ils ne provoquent pas la maladie et n’exposent pas le sujet à des risques de complications.</p>
-                            <p>La plupart des vaccins sont administrés par injection, mais certains se prennent par voie orale ou par aérosol nasal.</p>
-                        </div>
-                      </div>
+          <div class="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+            <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+                <div class="col-md-6">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre prénom.
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Comment agit un vaccin ? 
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Les vaccins réduisent le risque de contracter une maladie en travaillant sur les défenses naturelles de l’organisme pour établir une protection. C’est le système immunitaire qui réagit lorsqu’on se fait vacciner :</p>
-                            <p>
-                                <ul>
-                                    <li>Il reconnaît le germe invasif, comme un virus ou une bactérie.</li>
-                                    <li>Il produit des anticorps. Ce sont des protéines produites naturellement par le système immunitaire pour combattre la maladie.</li>
-                                    <li>Il se rappelle de la maladie par la suite et de la manière de la combattre. Lorsqu’on est exposé plus tard au même germe, le système immunitaire peut le détruire rapidement, avant que la personne ne tombe malade.</li>
-                                </ul>
-                            </p>
-                            <p>Les vaccins sont donc un moyen sûr et astucieux de produire une réponse immunitaire de l’organisme, sans provoquer de maladie.</p>
-                            <p>Le système immunitaire a de la mémoire. Une fois qu’il a été exposé à une ou plusieurs doses vaccinales, le sujet vacciné demeure protégé contre la maladie concernée pendant des années, des décennies, voire la vie entière. C’est la raison pour laquelle les vaccins sont si efficaces. Plutôt que de traiter le mal, ils permettent d’éviter de tomber malade. </p>
-                        </div>
-                      </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre nom.
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Pourquoi dois-je me faire vacciner ?
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre e-mail.
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Quand dois-je me faire vacciner (ou faire vacciner mes enfants) ?
-                          </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                          
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Téléphone</label>
+                    <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre numéro de téléphone.
                     </div>
-                
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Quelles maladie les vaccins permettent-ils d'éviter ?
-                          </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSix">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Qui peut se faire vacciner ?
-                          </button>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                          
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingSeven">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Qu'y a-t-il dans un vaccin ? 
-                          </button>
-                        </h2>
-                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEight">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            Les vaccins sont-ils sûrs ? 
-                          </button>
-                        </h2>
-                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingNine">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            Les vaccins ont-ils des effets secondaires ?
-                          </button>
-                        </h2>
-                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                            
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTen">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            Peut-on administrer à un enfant les vaccins en même temps ?
-                          </button>
-                        </h2>
-                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEleven">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                            Existe-t-il un lien entre les vaccins et l'autisme ?
-                          </button>
-                        </h2>
-                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwelve">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                            Dois-je faire vacciner ma fille contre le papillomavirus humain (PVH)?
-                          </button>
-                        </h2>
-                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                            
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
 
+                <div class="col-md-6">
+                  <label for="securityNumber" class="form-label">Numéro de sécurité sociale</label>
+                  <input type="email" class="form-control" name="securityNumber" id="securityNumber">
+                  <div class="invalid-feedback">
+                      Veuillez saisir votre numéro de sécurité sociale.
+                  </div>
+              </div>
 
-
-            </div>
-
-
-            <div class="art col-md-4 col-md-push-1">
-                
-                    <h3>Focus</h3>
-
-                    <div>
-                        <p><a href="">Vaccins et vaccination</a></p>
-                        <p><a href="">Vaccins contre la COVID-19</a></p>
-                        <p><a href="">COVAX</a></p>
-                        <p><a href="">Les Vaccins expliqués</a></p>
-
-                        <h3>Questions-réponses associés</h3>
-
-                        <p><a href="">Sécurité des vaccins</a></p>
-                        <p><a href="">Maladie à coronavirus 2019 (COVID-19) : vaccins</a></p>
-                        <p><a href="">Maladie à coronavirus 2019 (COVID-19) recherche-développement de vaccins</a></p>
-                        <p><a href="">Maladie à coronavirus 2019 (COVID-19) : accès aux vaccins et répartition des vaccins</a></p>
-
+                <div class="col-md-6">
+                    <label for="address" class="form-label">Adresse</label>
+                    <input type="email" class="form-control" name="address" id="address">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre adresse.
                     </div>
-                
-
-
-            </div>
-          </div>
-
-
-
-            
-
-          
+                </div>
+              
+                <div class="col-md-6">
+                    <label for="postcode" class="form-label">Code postal</label>
+                    <input type="text" class="form-control" name="postCode" id="postCode">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre code postal.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="conditions">J'accepte les conditions</label>
+                        <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+                        <div class="invalid-feedback">
+                            Merci de lire les conditions avant de valider le formulaire.
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-25">Valider</button>
+            </form>
         </div>
+
+      
         </section>
 
 
@@ -303,8 +158,9 @@
 
 
     
-
+<script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  </body>
+
 </html>
 
